@@ -7,7 +7,7 @@ app.use(express.json());
 app.set('port', 3000);
 
 app.get('/', (req, res) => {
-  return res.send('Hello world!\n');
+  return res.send('Hello world!!\n');
 });
 
 export const dummy = (a: number): number => {

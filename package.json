@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "concurrently \"pnpm run watch-compile\" \"pnpm run docker-dev\"",
     "watch-compile": "swc src -w --out-dir dist",
-    "docker-dev": "docker build -t dev-watch -f Dockerfile.dev . && docker run -p 3000:3000 -v ./:/usr/src/app -v /usr/src/app/node_modules --rm dev-watch",
+    "docker-dev": "sh ./dockerdev.sh",
     "watch-dev": "nodemon -L --watch \"dist/**/*\" -e js ./dist/server.js",
     "watch-dev-local": "nodemon --watch \"dist/**/*\" -e js ./dist/server.js",
     "build": "swc src -d dist",

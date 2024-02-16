@@ -1,7 +1,6 @@
-import { dummy } from './app';
+import { expect, test } from 'vitest';
+import { dummy } from './app.js';
 
-describe('dummy', () => {
-  test('does jest work', () => {
+  test('does vitest work', () => {
     expect(dummy(2)).toBe(3);
   });
-});

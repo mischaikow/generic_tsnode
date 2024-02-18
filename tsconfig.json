@@ -2,5 +2,7 @@
   "extends": "@tsconfig/node20/tsconfig.json",
   "include": ["src/**/*", "index.ts"],
   "exclude": ["node_modules"],
-  "compilerOptions": {}
+  "compilerOptions": {
+    "sourceMap": true
+  }
 }
